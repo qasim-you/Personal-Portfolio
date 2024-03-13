@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Header() {
+const Contact = () => {
   return (
     <div>
-      Header 
+     contacts 
     </div>
   )
 }
+
+export default Contact ;
