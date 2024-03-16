@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const useScroll =()=> {
+const useScroll = () => {
   const [completion, setCompletion] = useState(0);
   useEffect(() => {
     const updateScroll = () => {
@@ -10,10 +10,10 @@ const useScroll =()=> {
       }
     };
 
-    window.addEventListener('scroll',updateScroll);
-    return () => window.removeEventListener('scroll',updateScroll)
+    window.addEventListener("scroll", updateScroll);
+    return () => window.removeEventListener("scroll", updateScroll);
   }, []);
 
   return completion;
-}
-export default useScroll ;
+};
+export default useScroll;
